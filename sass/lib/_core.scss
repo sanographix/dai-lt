@@ -1,0 +1,156 @@
+// Core (Main Style)
+
+.globalheader {
+    display: inline-block;
+    background-color: $base;
+    padding: .7em;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 80%;
+        line-height: 1;
+    }
+
+}
+
+.l-section {
+    padding: 3em 0;
+    overflow: hidden;
+    @media #{$mq-sm} {
+        padding: 1.5em 0;
+    }
+    h2 {
+        font-size: 400%;
+        @media #{$mq-sm} {
+            font-size: 250%;
+        }
+        @media #{$mq-xs} {
+            font-size: 200%;
+        }
+    }
+    h3 {
+        font-size: 200%;
+        @media #{$mq-sm} {
+            font-size: 170%;
+        }
+        @media #{$mq-xs} {
+            font-size: 140%;
+        }
+    }
+}
+
+.l-hero {
+    padding-top: 5em;
+    .l-container {
+        position: relative;
+    }
+    h1 {
+        font-size: 900%;
+        line-height: 1;
+        margin: 0;
+        @media #{$mq-sm} {
+            font-size: 500%;
+        }
+        @media #{$mq-xs} {
+            font-size: 400%;
+        }
+    }
+    .dai {
+        top: -200px;
+        right: -400px;
+        @media #{$mq-sm} {
+            top: -100px;
+            right: -170px;
+        }
+    }
+}
+
+.rule {
+    padding-top: 6em;
+    @media #{$mq-sm} {
+        padding-top: 3em;
+    }
+}
+
+.faq {
+    position: relative;
+    .dai {
+        top: -200px;
+        left: -100px;
+        @media #{$mq-sm} {
+            top: -100px;
+            left: -50px;
+        }
+    }
+}
+
+.report {
+    position: relative;
+    .dai {
+        top: -200px;
+        width: 100%;
+        text-align: center;
+        @media #{$mq-sm} {
+            top: -50px;
+        }
+    }
+}
+
+.dai {
+    color: $red;
+    font-size: 800px;
+    position: absolute;
+    line-height: 1;
+    opacity: .7;
+    z-index: -1;
+    @media #{$mq-sm} {
+        font-size: 400px;
+    }
+}
+
+.lg {
+    font-size: 140%;
+    @media #{$mq-sm} {
+        font-size: 120%;
+    }
+}
+
+ol{
+    counter-reset:number;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+ol li{
+    padding: .5em 0;
+}
+ol li:before{
+    counter-increment: number;
+    content: counter(number);
+    background-color: $base;
+    color: #fff;
+    padding: .2em .5em;
+    margin-right: .5em;
+}
+
+.faq-item {
+    margin-bottom: 3em;
+    h3:before {
+        content: "";
+        display: inline-block;
+        width: .8em;
+        height: .8em;
+        background-color: $base;
+        margin-right: .4em;
+    }
+}
+
+.join {
+    background-color: $base;
+    color: #fff;
+    text-align: center;
+}
