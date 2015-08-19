@@ -71,13 +71,10 @@
 
 .rule {
     padding-top: 6em;
+    position: relative;
     @media #{$mq-sm} {
         padding-top: 3em;
     }
-}
-
-.faq {
-    position: relative;
     .dai {
         top: -200px;
         left: -100px;
@@ -88,7 +85,7 @@
     }
 }
 
-.report {
+.faq {
     position: relative;
     .dai {
         top: -200px;
