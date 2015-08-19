@@ -55,6 +55,13 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
+// タスク定義
+gulp.task('ejs', function () {
+    gulp.src("./index.ejs")
+        .pipe(ejs())
+        .pipe(gulp.dest("./"))
+});
+
 // Task for `gulp` command
 
 gulp.task('default',['browser-sync'], function() {
