@@ -2,19 +2,37 @@
 
 .globalheader {
     display: inline-block;
-    background-color: $base;
     padding: .7em;
     position: absolute;
     top: 0;
-    left: 0;
-
+    &.left {
+        left: 0;
+    }
+    &.right {
+        right: 0;
+    }
     a {
         color: #fff;
         text-decoration: none;
         font-size: 80%;
         line-height: 1;
     }
+}
 
+// 背景色つけたい場合
+.bgcolor {
+    background-color: $base;
+    color: #fff;
+    &.bgcolor-alt {
+        background-color: $link;
+    }
+    a {
+        color: #fff;
+    }
+    .btn {
+        color: #fff;
+        border-color: #fff;
+    }
 }
 
 .l-section {
@@ -43,70 +61,108 @@
     }
 }
 
+// hero
 .l-hero {
-    padding-top: 5em;
+    padding-top: 4em;
+    text-align: center;
     .l-container {
         position: relative;
     }
     h1 {
-        font-size: 900%;
+        font-size: 1500%;
+        font-family: 'AxisStd-Medium', sans-serif;
         line-height: 1;
         margin: 0;
         @media #{$mq-sm} {
-            font-size: 500%;
+            font-size: 1000%;
         }
         @media #{$mq-xs} {
-            font-size: 400%;
+            font-size: 800%;
         }
     }
-    .dai {
-        top: -200px;
-        right: -400px;
+    h2 {
+        margin-top: .5em;
+        font-size: 180%;
         @media #{$mq-sm} {
-            top: -100px;
-            right: -170px;
+            font-size: 120%;
+        }
+    }
+}
+//春
+.page-haru {
+    .l-hero {
+        background-color: $haru;
+    }
+}
+//盆
+.page-bon {
+    .l-hero {
+        background-color: $bon;
+    }
+}
+//茶
+.page-cha {
+    .l-hero {
+        background-color: $cha;
+    }
+}
+
+
+// notify
+.l-notify {
+    a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding: 1em .5em;
+        &:hover {
+            background-color: $hover;
+            color: #fff;
+        }
+    }
+}
+
+// nav
+
+.l-nav {
+    background-color: $border;
+    text-align: center;
+    p {
+        margin: 0;
+        padding: 1em 0 0;
+        color: $light;
+        font-size: 90%;
+    }
+    ul {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: table-cell;
+            text-align: center;
+            a {
+                display: block;
+                text-decoration: none;
+                line-height: 1.2;
+                padding: 1em .5em;
+                & > span {
+                    display: block;
+                }
+            }
+            .number {
+                font-size: 300%;
+            }
+            .place {
+                font-size: 80%;
+            }
         }
     }
 }
 
 .rule {
-    padding-top: 6em;
-    position: relative;
-    @media #{$mq-sm} {
-        padding-top: 3em;
-    }
-    .dai {
-        top: -200px;
-        left: -100px;
-        @media #{$mq-sm} {
-            top: -100px;
-            left: -50px;
-        }
-    }
-}
-
-.faq {
-    position: relative;
-    .dai {
-        top: -200px;
-        width: 100%;
-        text-align: center;
-        @media #{$mq-sm} {
-            top: -50px;
-        }
-    }
-}
-
-.dai {
-    color: $red;
-    font-size: 800px;
-    position: absolute;
-    line-height: 1;
-    opacity: .7;
-    z-index: -1;
-    @media #{$mq-sm} {
-        font-size: 400px;
-    }
 }
 
 .lg {
@@ -116,6 +172,7 @@
     }
 }
 
+// ol
 ol{
     counter-reset:number;
     list-style:none;
@@ -132,6 +189,17 @@ ol li:before{
     color: #fff;
     padding: .2em .5em;
     margin-right: .5em;
+}
+
+// dl
+.dl {
+    dt {
+        font-family: 'AxisStd-Bold', sans-serif;
+        font-size: 130%;
+    }
+    dd {
+        margin-bottom: 1.5em;
+    }
 }
 
 .faq-item {
