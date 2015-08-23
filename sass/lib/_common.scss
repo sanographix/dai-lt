@@ -1,15 +1,13 @@
 // Common
 
 body {
-    font-family: 'AvantGardeGothicITCW01D_731075', 'AxisStd-Medium', sans-serif;
+    font-family: 'AxisStd-Medium', sans-serif;
     background: $bg;
     color: $base;
     -webkit-font-smoothing: antialiased;
     font-size: 120%;
-    border: 1em solid $base;
     @media #{$mq-xs} {
-        font-size: 100%;
-        border-width: .5em;
+        font-size: 90%;
     }
 }
 
@@ -33,7 +31,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     margin-bottom: .5em;
     font-weight: normal;
-    font-family: 'AvantGardeGothicITCW01D_731075', 'AxisStd-Bold', sans-serif;
+    font-family: 'AxisStd-Bold', sans-serif;
     a,a:hover {
         color: $base;
         text-decoration: none;

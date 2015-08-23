@@ -6,4 +6,12 @@ $(document).ready(function(){
         $(a).attr('target', '_blank');
       }
     });
+
+    // ぬるっとスクロールする
+    $("a[href^=#]").click(function() {
+        var scrollHref= $(this).attr("href");
+        var scrollPosition = $(scrollHref).offset().top;
+        $("html,body").animate({scrollTop : scrollPosition}, '700');
+        return false;
+    });
 });

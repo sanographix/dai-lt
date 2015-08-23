@@ -2,15 +2,17 @@
 
 $bg: #fff; // Background color
 
-$base: green; // Base text color
-$light: #999; // Light text color
-$red: #F41623;
+$base: #2C3E50; // Base text color
+$light: #67809F; // Light text color
 
-$link: $base; // Link text color
-$hover: darken($link,8%); // Link text color(hover)
+$link: #F64747; // Link text color
+$hover: darken($link,15%); // Link text color(hover)
 
-$border: #ddd; // Border color
+$border: #DADFE1; // Border color
 
+$haru: #E26A6A; //春
+$bon: #1E14BD; //盆
+$cha: green; //茶
 
 // Media Queries - Breakpoints
 

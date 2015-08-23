@@ -1,1 +1,1 @@
-$(document).ready(function(){$("a").each(function(){var n=this;n.origin!==location.origin&&$(n).attr("target","_blank")})});
+$(document).ready(function(){$("a").each(function(){var t=this;t.origin!==location.origin&&$(t).attr("target","_blank")}),$("a[href^=#]").click(function(){var t=$(this).attr("href"),a=$(t).offset().top;return $("html,body").animate({scrollTop:a},"700"),!1})});
